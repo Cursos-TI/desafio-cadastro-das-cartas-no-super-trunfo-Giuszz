@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main (){
 
@@ -11,9 +12,6 @@ int populacao;
 float areakm;
 float pib;
 int pontosturisticos;
-
-float pibpercapita = pib /  populacao;
-float densidadepop = populacao / areakm;
 
 printf ("Vamos cadastrar as cartas!\n");
 
@@ -39,6 +37,9 @@ scanf ("%f", &pib);
 printf ("Por último, digite o número de pontos turísticos: \n");
 scanf ("%d", &pontosturisticos);
 
+float pibpercapita = pib / populacao;
+float densidadepop = areakm / populacao;
+
 printf ("Estado: %s \n", estado);
 printf ("Código da carta: %s \n", codigodacarta);
 printf ("Nome da cidade: %s \n", nomecidade);
@@ -46,8 +47,8 @@ printf ("População: %d \n", populacao);
 printf ("Área (Km²): %f \n", areakm);
 printf ("PIB: %f \n", pib);
 printf ("Pontos turísticos: %d \n", pontosturisticos);
-printf ("PIB per capita: %f \n", pibpercapita);
-printf ("Densidade populacional: %f \n", densidadepop);
+printf ("PIB per capita: %f \n", pib/populacao);
+printf ("Densidade populacional: %f \n", densidadepop/populacao);
 
 
 
