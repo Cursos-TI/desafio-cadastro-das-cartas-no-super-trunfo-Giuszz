@@ -2,44 +2,59 @@
 
 int main (){
 
-printf ("Desafio Supertrunfo Iniciante :D \n");
+printf ("Desafio Supertrunfo :D\n");
 
-int codigo, pontosturisticos, populacao;
+char estado[20];
+char codigodacarta [20];
+char nomecidade [20];
+int populacao;
+float areakm;
 float pib;
-double area;
-char nomecidade[20];
-float densidadepop;
-float pibpercapta;
+int pontosturisticos;
+
+float pibpercapita = pib /  populacao;
+float densidadepop = populacao / areakm;
+
+printf ("Vamos cadastrar as cartas!\n");
+
+
+printf("Insira o estado (sigla):\n");
+scanf ("%s", &estado);
+
+printf ("Digite o código da carta:\n");
+scanf ("%s", &codigodacarta);
 
 printf ("Digite o nome da cidade:\n");
 scanf ("%s", &nomecidade);
 
-printf ("Digite o código da carta:\n");
-scanf ("%d", &codigo);
-
-printf ("Digite a população:\n");
+printf ("Agora, digite a população da cidade:\n");
 scanf ("%d", &populacao);
 
-printf ("Digite o número de pontos turísticos:\n");
-scanf("%d", &pontosturisticos);
+printf ("Digite a área em km²:\n");
+scanf ("%f", &areakm);
 
-printf ("Digite a área:\n");
-scanf ("%d", &area);
-
-printf ("Digite o PIB:\n");
+printf ("Digite o PIB da cidade: \n");
 scanf ("%f", &pib);
 
-densidadepop = populacao/area;
-pibpercapta= pib/populacao;
+printf ("Por último, digite o número de pontos turísticos: \n");
+scanf ("%d", &pontosturisticos);
 
+printf ("Estado: %s \n", estado);
+printf ("Código da carta: %s \n", codigodacarta);
 printf ("Nome da cidade: %s \n", nomecidade);
-printf ("Código: %d \n",codigo);
 printf ("População: %d \n", populacao);
-printf ("Àrea: %d \n", area);
-printf("Número de pontos turísticos: %d \n", pontosturisticos);
-printf("PIB: %2.f \n", pib);
-printf("Densidade populacional: %f \n", densidadepop);
-printf("PIB per capita:%f \n", pibpercapta);
+printf ("Área (Km²): %f \n", areakm);
+printf ("PIB: %f \n", pib);
+printf ("Pontos turísticos: %d \n", pontosturisticos);
+printf ("PIB per capita: %f \n", pibpercapita);
+printf ("Densidade populacional: %f \n", densidadepop);
 
- return 0;
+
+
+
+
+
+
+
+return 0;
 }
