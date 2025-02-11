@@ -109,41 +109,7 @@ if (densidadepop<densidadepop2){
     }
   }
 }
-  else {
-    printf("A carta 2 é a vencedora!");
-  }
 
-  if (densidadepop<densidadepop2){
-    if (pibpercapita<pibpercapita2){
-        if (superpoder>superpoder2){
-            printf ("A carta 1 é a vencedora!");
-        }
-    }
-  }
-        else {
-            printf ("A carta 2 é a vencedora!");
-      
- if (densidadepop>densidadepop2){
-    if (pibpercapita>pibpercapita2){
-        if (superpoder>superpoder2){
-            printf ("A carta 1 é a vencedora!");
-        }
-    }
- }
-else {
-    printf ("A carta 2 é a vencedora!");
-}
-
-if (densidadepop<densidadepop2){
-    if (pibpercapita>pibpercapita2){
-        if (superpoder<superpoder2){
-            printf ("A carta 1 é a vencedora!");
-        }
-    }
-}
-else {
-    printf ("A carta 2 é a vencedora!");
-}
 
 
 
