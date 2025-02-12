@@ -12,6 +12,7 @@ int populacao;
 float areakm;
 float pib;
 int pontosturisticos;
+//variaveis de dados da primeira carta
 
 printf ("Vamos cadastrar as cartas!\n");
 
@@ -54,6 +55,7 @@ printf ("Densidade populacional: %f \n", areakm/populacao);
 printf ("Superpoder: %3.f \n", superpoder);
 
 printf ("A primeira carta foi finalizada.\n");
+//codigo do cadastro da primeira carta
 
 char estado2[20];
 char codigodacarta2 [20];
@@ -62,6 +64,7 @@ int populacao2;
 float areakm2;
 float pib2;
 int pontosturisticos2;
+//dados da segunda carta
 
 printf ("Agora, insira os dados da segunda: \n");
 
@@ -101,14 +104,21 @@ printf ("Pontos turísticos: %d \n", pontosturisticos2);
 printf ("PIB per capita: %f \n", pib2/populacao2);
 printf ("Densidade populacional: %f \n", areakm2/populacao2);
 printf ("Superpoder: %3.f \n", superpoder2);
+// codigo do cadastro da segunda carta
 
-if (densidadepop<densidadepop2){
-  if ( pibpercapita>pibpercapita2){
-    if (superpoder>superpoder2){
-        printf ("A carta 1 é a vencedora!");
-    }
+if (densidadepop<densidadepop2 && pibpercapita>pibpercapita2 && superpoder>superpoder2){
+  printf ("A carta 1 é a vencedora!");
+} else if   (densidadepop<densidadepop2 && pibpercapita<pibpercapita2 && superpoder>superpoder2){
+  printf ("A carta 1 é a vencedora!");
+} else if (densidadepop>densidadepop2 && pibpercapita>pibpercapita2 && superpoder>superpoder2){
+  printf ("A carta 1 é a vencedora");
+ } else if (densidadepop<densidadepop2 && pibpercapita>pibpercapita2 && superpoder<superpoder2){
+    printf ("A carta 1 é a vencedora!");
   }
+else {
+  printf ("A carta 2 é a vencedora!");
 }
+  // comparação das duas cartas e resultado exibido
 
 
 
