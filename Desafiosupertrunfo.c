@@ -5,6 +5,42 @@ int main (){
 
 printf ("Desafio Supertrunfo :D\n");
 
+int opcao;
+
+ printf ("Menu Principal\n");
+ printf("1.Cadastrar carta.\n");
+ printf ("2.Regras.\n");
+ printf("Escolha uma opção:");
+ scanf("%d", &opcao);
+
+ switch (opcao){
+  case 1:
+  printf("Começando o jogo...\n");
+  break;
+
+  case 2:
+  printf( "Atributos desejados: Menor densidade populacional.\n");
+  printf("Maior PIB per capita.\n");
+  printf ("Maior superpoder:\n");
+  printf ("A carta que possuir dois atributos desejados vence a rodada.\n");
+  break;
+
+  default:
+  printf ("Opção inválida.\n");
+  break;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 char estado[20];
 char codigodacarta [20];
 char nomecidade [20];
