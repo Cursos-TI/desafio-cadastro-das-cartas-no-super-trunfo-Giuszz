@@ -7,6 +7,7 @@ printf ("Desafio Supertrunfo :D\n");
 
 int opcao;
 
+do {
  printf ("Menu Principal\n");
  printf("1.Cadastrar carta.\n");
  printf ("2.Regras.\n");
@@ -29,17 +30,8 @@ int opcao;
   printf ("Opção inválida.\n");
   break;
  }
-
-
-
-
-
-
-
-
-
-
-
+//código do menu em switch
+} while (opcao != 1);
 
 char estado[20];
 char codigodacarta [20];
